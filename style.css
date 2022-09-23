@@ -1,0 +1,311 @@
+/* estilos generales*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: #D7E9F7;
+    display: flex;
+}
+
+.cabecera {
+    display: flex;
+    width: 100%;
+}
+
+.cabecera__imagen {
+    width: 5%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+body {
+    background-color: #FDFCE5;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image:url("imagenes/Iconos/casa-de-perro-01.png");
+    background-size: 125px 125px;
+    
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    list-style: none;
+    align-items:flex-end;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    font-size: larger;
+    
+}
+
+
+
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    background-color: #F4D19B;
+    width: 20%;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #D7E9F7;
+}
+
+
+.pie__caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    gap: 5px;
+}
+
+.elemento__copyright{
+    grid-row-start: 2;
+    margin-left: 20px;
+}
+
+.elemento__links{
+    grid-row-start: 3;
+    margin-left: 20px;
+}
+
+.elemento__iconos{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    display: flex;
+    justify-content: end;
+}
+
+.links__nosotros{
+    margin-right: 5px;
+}
+
+
+.iconos__redes{
+    margin-right: 10px;
+    width: 24px;
+}
+
+
+.boton {
+    background-color: #FDFCE5;
+    width: 70px;
+    height: 30px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+h2{
+    
+    background-color: #F4D19B;
+    border: solid 2px black;
+    margin-top: 3%;
+    width: 10%;
+    margin-left: 45%;
+    text-align: center;
+}
+
+#actual {
+    color: white;
+    pointer-events: none; 
+    cursor: default;
+}
+
+p{
+    text-align: justify;
+}
+
+
+
+/*estilos index*/
+
+
+
+#portada {
+    width: 70%;
+    margin: 5% 12%;
+    padding: 3%;
+    border: solid 3px black;
+    background-color: #F4D19B;
+}
+
+.noticia {
+    display: inline-block;
+    background-color: #F9F3DF;
+    width: 29%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    border: solid 2px black;
+
+}
+
+.noticia__imagen {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+}
+
+.noticia__articulo {
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: large;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*estilos galeria*/
+
+.video-corto {
+    margin: 20px;
+}
+
+.link {
+    background-color: #D7E9F7;
+    opacity: 0.8;
+}
+
+#links__galeria {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor__fotos {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px 450px 450px;
+    gap: 30px 50px;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 11px 16px 4px rgba(0,0,0,0.46); 
+    box-shadow: 10px 11px 16px 4px rgba(0,0,0,0.46);
+}
+
+.foto__2 {
+    grid-column: span 2;
+}
+
+.foto__3 {
+    grid-column: span 2;
+    
+}
+
+.foto__4 {
+    grid-row: span 2;
+}
+
+.contenedor__videos {
+    display: flex;
+    justify-content: center;
+}
+
+/*estilos tienda*/
+
+.producto {
+    background-color: white;
+    margin: 25px;
+    width: 250px;
+    padding: 15px 0px 15px;
+    border-radius: 4px;
+}
+
+.contenedor__producto {
+    display: flex;
+    justify-content: center;
+}
+
+/*estilos eventos*/
+
+.banner {
+    background-color: #F4D19B;
+    color: black;
+    display: inline-block;
+    width: 60%;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    border: solid 3px black;
+}
+
+.banner__desplegable {
+    display: inline-block;
+    margin-top: 20px;
+}
+.banner__desplegable__informacion {
+    display: inline-block;
+    margin-left: 10px;
+    width: 15rem;
+}
+
+.compra {
+    background-color: goldenrod;
+    width: 70px;
+    height: 30px;
+    margin-left: 3rem;
+
+    
+}
+
+
+
+/*estilos nosotros*/
+
+.caja {
+    background-color: beige;
+    display: inline-block;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border: solid 2px black;
+}
+
+.caja__desplegable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #F4D19B;
+    font-size: larger;
+    margin-bottom: 2%;
+}
+
+.caja__informacion{
+    margin: 3%;
+}
+#formulario {
+    margin-left: 35%;
+}
+
+#enviar {
+    margin-bottom: 2%;
+}
+
+
+
