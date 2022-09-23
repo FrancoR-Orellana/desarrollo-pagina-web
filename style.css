@@ -4,21 +4,13 @@
     padding: 0px;
     margin: 0px;
 }
-header {
-    background-color: #D7E9F7;
-    display: flex;
-}
 
 .cabecera {
-    display: flex;
-    width: 100%;
+    background-color: #D7E9F7;
 }
 
 .cabecera__imagen {
-    width: 5%;
-    margin-top: 1%;
-    margin-left: 2%;
-    margin-bottom: 1%;
+    width: 50px;
 }
 
 body {
@@ -29,21 +21,10 @@ body {
     background-size: 125px 125px;
     
 }
-.menu{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    list-style: none;
-    align-items:flex-end;
-    justify-content: space-around;
-    margin-bottom: 1%;
-    font-size: larger;
-    
+
+.cabecera__contenedor{
+    width: 90%;
 }
-
-
-
-
 h1 {
     display: inline-block;
     font-size: 50px;

@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alina</title>
-    <link rel="shortcut icon" href="imagenes/Iconos/icono-alina.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<header>
-    <nav class="cabecera">
-        <img src="imagenes/iconos/icono-alina.png" alt="silueta-perro-salchicha" class="cabecera__imagen">
-        <!--quedan desabilitados los links en el header de la pagina actual-->
-        <ul class="menu">
-            <li class="menu__elementos"><a href="index.html">Inicio</a></li>
-            <li class="menu__elementos"><a href="galeria.html">Galeria</a></li>
-            <li class="menu__elementos"><a href="tienda.html">Tienda</a></li>
-            <li class="menu__elementos"><a href="eventos.html">Eventos</a></li>
-            <li class="menu__elementos"><a href="nosotros.html" id="actual">Nosotros</a></li>
-        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alina</title>
+        <link rel="shortcut icon" href="imagenes/Iconos/icono-alina.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-tablet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+            rel="stylesheet">
     
-    </nav>
-</header>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg cabecera">
+                <div class="container-fluid">
+                  <img src="imagenes/iconos/icono-alina.png" alt="silueta-perro-salchicha" class="navbar-brand cabecera__imagen">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav cabecera__contenedor d-flex justify-content-around">
+                      <a class="nav-link active cabecera__link animate__animated animate__zoomIn" href="index.html" >Inicio</a>
+                      <a class="nav-link cabecera__link animate__animated animate__zoomIn" href="galeria.html">Galeria</a>
+                      <a class="nav-link cabecera__link animate__animated animate__zoomIn" href="tienda.html">Tienda</a>
+                      <a class="nav-link cabecera__link animate__animated animate__zoomIn" href="eventos.html">Eventos</a>
+                      <a class="nav-link cabecera__link animate__animated animate__shakeX" id="actual">Nosotros</a>
+                      
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
 <main>
 
     <h1>Nosotros</h1>
@@ -58,24 +71,36 @@
     </div>
 
 </main>
-<footer>
-    <nav id="pie">
-        <br><br>
-        <span id="pie__texto">Copyright © 2019-2022</span>
-        <br>
-        <a href="nosotros.html">Ayuda</a>
-        <a href="nosotros.html">Terminos de Uso</a>
-        <a href="nosotros.html">Policitas de privacidad</a>
-        <span id="pie__iconos">
-            <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Iconos/facebook.png" alt="logo-facebook" class="iconos__redes"></a>
-            <a href="https://twitter.com" target="_blank"><img src="Imagenes/Iconos/twitter.png" alt="logo-twitter" class="iconos__redes"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="Imagenes/Iconos/youtube.png" alt="logo-youtube" class="iconos__redes"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Iconos/instagram.png" alt="logo-instagram" class="iconos__redes"></a>
-            <a href="https://spotify.com" target="_blank"><img src="Imagenes/Iconos/social.png" alt="logo-spotify" class="iconos__redes"></a>
-        </span>
-    </nav>
-</footer>
-<body>
-    
+    <footer>
+        <nav id="pie">
+            <div class="pie__caja">
+                <div class="pie__elemento elemento__copyright">
+                    <span id="pie__texto">Copyright © 2019-2022</span>
+                </div>
+                <div class="pie__elemento elemento__links">
+                    <a href="nosotros.html" class="links__nosotros">Ayuda</a>
+                    <a href="nosotros.html" class="links__nosotros">Terminos de Uso</a>
+                    <a href="nosotros.html" class="links__nosotros">Policitas de privacidad</a>
+                </div>
+                <div id="pie__iconos" class="pie__elemento elemento__iconos">
+                    <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Iconos/facebook.png"
+                            alt="logo-facebook" class="iconos__redes"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="Imagenes/Iconos/twitter.png" alt="logo-twitter"
+                            class="iconos__redes"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="Imagenes/Iconos/youtube.png"
+                            alt="logo-youtube" class="iconos__redes"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Iconos/instagram.png"
+                            alt="logo-instagram" class="iconos__redes"></a>
+                    <a href="https://spotify.com" target="_blank"><img src="Imagenes/Iconos/social.png" alt="logo-spotify"
+                            class="iconos__redes"></a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
 </body>
 </html>
