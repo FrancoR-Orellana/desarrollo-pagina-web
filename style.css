@@ -216,6 +216,10 @@ h3 {
     justify-content: center;
 }
 
+.color__producto{
+    background-color: rgb(91, 155, 250);
+}
+
 /*estilos eventos*/
 
 .banner {
