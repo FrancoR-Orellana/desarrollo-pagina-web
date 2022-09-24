@@ -208,11 +208,7 @@ h3 {
 /*estilos tienda*/
 
 .producto {
-    background-color: white;
     margin: 25px;
-    width: 250px;
-    padding: 15px 0px 15px;
-    border-radius: 4px;
 }
 
 .contenedor__producto {
