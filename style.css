@@ -89,7 +89,7 @@ a:link, a:visited, a:active {
     color: black;
 }
 
-h2{
+.subtitulo{
     
     background-color: #F4D19B;
     border: solid 2px black;
@@ -256,11 +256,47 @@ h3 {
 
 /*estilos nosotros*/
 
-.caja {
+.caja{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 50px;
+    column-gap: 10px;
+}
+
+.color-caja{
+    background-color: #F4D19B;
+    border: solid black 1px;
+}
+
+.color-boton{
+    background-color: #F4D19B;
+}
+
+.color-desplegable{
+    background-color: beige;
+    border: solid black 1px;
+}
+
+.caja-item-1{
+    grid-column-start: 2;
+}
+
+.caja-item-2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.caja-item-3{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+
+.formulario {
     background-color: beige;
     display: inline-block;
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 15%;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     border: solid 2px black;
@@ -277,9 +313,6 @@ h3 {
     margin-bottom: 2%;
 }
 
-.caja__informacion{
-    margin: 3%;
-}
 #formulario {
     margin-left: 35%;
 }
@@ -287,6 +320,15 @@ h3 {
 #enviar {
     margin-bottom: 2%;
 }
+
+.input {
+    width: 30%;
+}
+
+.input-texto {
+    width: 50%;
+}
+
 
 
 
