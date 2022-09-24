@@ -42,10 +42,53 @@
         width: 90%;
         margin-left: 5%;
     }
+    /*estilos galeria*/
+
+    .contenedor__fotos {
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px 450px;
+        gap: 30px 50px;
+    }
+    
+    .imagen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        -webkit-box-shadow: 10px 11px 16px 4px rgba(0,0,0,0.46); 
+        box-shadow: 10px 11px 16px 4px rgba(0,0,0,0.46);
+    }
+    .foto__2 {
+        grid-column: span 1;
+    }
+    
+    .foto__3 {
+        grid-column: span 1;
+        
+    }
+    
+    .foto__4 {
+        grid-row: span 1;
+    }
+
+    h2{
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .contenedor__videos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 550px 550px;
+        
+    }
 
     
 }
 @media only screen and (min-width:650px) and (max-width:960px){
+    /*estilos index*/
     .noticia{
         display: inline-block;
         width: 40%;
@@ -55,6 +98,33 @@
     .noticia__3{
         margin-left: 30%;
     }
+
+    
+
+    
+}
+/*estilos galeria*/
+@media only screen and (max-width:650px){
+    .contenedor__fotos {
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px 50px;
+    }
+
+    .contenedor__videos{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        column-gap: 20%;
+    }
+
+    .video__media{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 /*estilos mobile*/
@@ -99,6 +169,51 @@
         width: 90%;
         margin-left: 5%;
     }
+    /*estilos galeria*/
+
+    .contenedor__fotos {
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px 50px;
+    }
+    
+    .imagen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        -webkit-box-shadow: 10px 11px 16px 4px rgba(0,0,0,0.46); 
+        box-shadow: 10px 11px 16px 4px rgba(0,0,0,0.46);
+    }
+    .foto__2 {
+        grid-column: span 1;
+    }
+    
+    .foto__3 {
+        grid-column: span 1;
+        
+    }
+    
+    .foto__4 {
+        grid-row: span 1;
+    }
+
+    h2{
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .contenedor__videos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+        
+    }
+
+
     
 
 }
