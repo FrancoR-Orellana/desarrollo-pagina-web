@@ -94,8 +94,8 @@ a:link, a:visited, a:active {
     background-color: #F4D19B;
     border: solid 2px black;
     margin-top: 3%;
-    width: 10%;
-    margin-left: 45%;
+    width: 20%;
+    margin-left: 40%;
     text-align: center;
 }
 
@@ -309,12 +309,11 @@ h3 {
     width: 100%;
     height: 4rem;
     background-color: #F4D19B;
-    font-size: larger;
     margin-bottom: 2%;
 }
 
 #formulario {
-    margin-left: 35%;
+    margin-left: 10%;
 }
 
 #enviar {
@@ -322,11 +321,12 @@ h3 {
 }
 
 .input {
-    width: 30%;
+    width: 80%;
 }
 
 .input-texto {
-    width: 50%;
+    width: 80%;
+    height: 70px;
 }
 
 

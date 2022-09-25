@@ -73,7 +73,7 @@
         grid-row: span 1;
     }
 
-    h2{
+    .subtitulo{
         width: 30%;
         margin-left: 35%;
     }
@@ -95,13 +95,7 @@
 
     /*estilos nosotros*/
 
-    .input {
-        width: 50%;
-    }
     
-    .input-texto {
-        width: 70%;
-    }
 
     
 }
@@ -230,7 +224,7 @@
         grid-row: span 1;
     }
 
-    h2{
+    .subtitulo{
         width: 30%;
         margin-left: 35%;
     }
