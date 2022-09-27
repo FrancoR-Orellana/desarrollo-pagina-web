@@ -26,7 +26,7 @@ body {
     width: 90%;
 }
 h1 {
-    display: inline-block;
+    
     font-size: 50px;
     margin-top: 20px;
     margin-left: 40%;
@@ -232,36 +232,75 @@ h3 {
 
 /*estilos eventos*/
 
-.banner {
-    background-color: #F4D19B;
-    color: black;
-    display: inline-block;
-    width: 60%;
-    height: 70px;
-    margin-bottom: 20px;
-    margin-left: 20%;
-    border: solid 3px black;
+
+.banner{
+    display: flex;
+    justify-content: center;
+
+margin-bottom: 30px;
 }
 
-.banner__desplegable {
-    display: inline-block;
-    margin-top: 20px;
+.banner__evento{
+    background-color: #F4D19B;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    border: solid black 2px;
+    border-radius: 4px;
 }
-.banner__desplegable__informacion {
-    display: inline-block;
-    margin-left: 10px;
-    width: 15rem;
+
+.mapa{
+    grid-column: span 3;
+}
+
+.banner__evento__informacion {
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	padding:6px 24px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
 .compra {
-    background-color: goldenrod;
-    width: 70px;
-    height: 30px;
-    margin-left: 3rem;
-
-    
+	box-shadow:inset 0px 1px 0px 0px #fae13c;
+	background:linear-gradient(to bottom, #ffeb0a 5%, #acb044 100%);
+	background-color:#ffeb0a;
+	border-radius:3px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-size:13px;
+	padding:6px 24px;
 }
-
+.compra:hover {
+	background:linear-gradient(to bottom, #acb044 5%, #ffeb0a 100%);
+	background-color:#acb044;
+}
+.compra:active {
+	position:relative;
+	top:1px;
+}
 
 
 /*estilos nosotros*/

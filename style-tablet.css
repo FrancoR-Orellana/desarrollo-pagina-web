@@ -2,8 +2,9 @@
 
     /*estilos generales*/
     h1{
-        width: 33.3%;
-        margin-left: 33.3%;
+        
+        display: flex;
+        justify-content: center;
         font-size: 30px;
     }
 
@@ -74,8 +75,9 @@
     }
 
     .subtitulo{
-        width: 30%;
-        margin-left: 35%;
+        display: flex;
+        justify-content: center;
+        
     }
 
     .contenedor__videos{
@@ -92,6 +94,34 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
+
+    /*estilos eventos*/
+
+    .banner__evento{
+        
+        width: 80%;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        
+    }
+
+    .banner__evento__informacion{
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .compra {
+        margin-bottom: 20px;
+    }
+
+    
+
+
+
+
 
     /*estilos nosotros*/
 
@@ -137,6 +167,8 @@
         justify-content: center;
     }
 
+    
+
     /*estilos tienda*/
 
     .contenedor__producto {
@@ -154,6 +186,8 @@
 /*estilos mobile*/
 
 @media only screen and (max-width:450px){
+
+    /*estilos generales*/
     footer{
         height: 160px;
     }
@@ -192,6 +226,13 @@
         display: block;
         width: 90%;
         margin-left: 5%;
+    }
+
+    .subtitulo{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        
     }
     /*estilos galeria*/
 
@@ -247,6 +288,28 @@
 
     .producto{
         grid-column-start: 2;
+    }
+
+    /*estilos eventos*/
+
+    .banner__evento{
+        
+        width: 80%;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        
+    }
+
+    .banner__evento__informacion{
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .compra {
+        margin-bottom: 20px;
     }
 
     /*estilos nosotros*/
