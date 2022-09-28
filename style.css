@@ -317,7 +317,13 @@ margin-bottom: 30px;
 
 .color-caja{
     background-color: #F4D19B;
-    border: solid black 1px;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+.caja-h2{
+    border: solid black 2px;
 }
 
 .color-boton{
