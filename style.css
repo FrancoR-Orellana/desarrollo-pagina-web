@@ -108,7 +108,9 @@ a:link, a:visited, a:active {
 p{
     text-align: justify;
 }
-
+ .oculto {
+    display: none;
+ }
 
 
 /*estilos index*/
