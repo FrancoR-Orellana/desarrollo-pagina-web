@@ -1,3 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  background-color: #FDFCE5;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://i.ibb.co/DLhd7Ws/casa-de-perro-01.png");
+  background-size: 125px 125px;
+}
+
+header .cabecera__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #D7E9F7;
+}
+header .cabecera__imagen {
+  width: 50px;
+}
+header .cabecera__contenedor {
+  width: 90%;
+}
+header .cabecera__contenedor #actual {
+  color: white;
+  pointer-events: none;
+  cursor: default;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@import '../base/_listas';
+@import '../base/_extend';
+
+header{
+    background-color: nth($colores, 1);
+    .cabecera__imagen{
+        width: 50px;
+    }
+    .cabecera__contenedor{
+        @extend %flex_centro;
+        width: 90%;
+        #actual{
+            color: white;
+            pointer-events: none; 
+            cursor: default;
+        }
+    }
+}
