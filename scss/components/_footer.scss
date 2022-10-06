@@ -1,0 +1,69 @@
+@import '../base/listas';
+
+footer {
+    background-color: nth($colores, 1 );
+    .pie__caja{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30px 30px 30px;
+        gap: 5px;
+        .elemento__copyright{
+            grid-row-start: 2;
+            margin-left: 20px;
+        }
+        
+        .elemento__links{
+            grid-row-start: 3;
+            margin-left: 20px;
+        }
+        
+        .elemento__iconos{
+            grid-row-start: 3;
+            grid-column-start: 3;
+            display: flex;
+            justify-content: end;
+        }
+        
+        .links__nosotros{
+            margin-right: 5px;
+        }
+        
+        
+        .iconos__redes{
+            margin-right: 10px;
+            width: 24px;
+        }
+    }
+}
+
+/*estilos mobile*/
+
+@media only screen and (max-width:991px){
+    footer{
+        height: 160px;
+        .pie__caja {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 35px 35px 35px 35px;
+            gap: 5%;
+            .elemento__copyright{
+                grid-row-start: 2;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .elemento__links{
+                grid-row-start: 3;
+                display: flex;
+                justify-content: center;   
+            }
+            
+            .elemento__iconos{
+                grid-row-start: 4;
+                grid-column-start: 1;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

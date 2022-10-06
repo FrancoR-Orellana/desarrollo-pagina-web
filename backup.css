@@ -1,30 +1,6 @@
 /* estilos generales*/
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
 
-.cabecera {
-    background-color: #D7E9F7;
-}
-
-.cabecera__imagen {
-    width: 50px;
-}
-
-body {
-    background-color: #FDFCE5;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    background-image:url("https://i.ibb.co/DLhd7Ws/casa-de-perro-01.png");
-    background-size: 125px 125px;
-    
-}
-
-.cabecera__contenedor{
-    width: 90%;
-}
 h1 {
     
     font-size: 50px;
@@ -38,44 +14,7 @@ h1 {
     justify-content: center;
 }
 
-footer {
-    background-color: #D7E9F7;
-}
 
-
-.pie__caja {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30px 30px 30px;
-    gap: 5px;
-}
-
-.elemento__copyright{
-    grid-row-start: 2;
-    margin-left: 20px;
-}
-
-.elemento__links{
-    grid-row-start: 3;
-    margin-left: 20px;
-}
-
-.elemento__iconos{
-    grid-row-start: 3;
-    grid-column-start: 3;
-    display: flex;
-    justify-content: end;
-}
-
-.links__nosotros{
-    margin-right: 5px;
-}
-
-
-.iconos__redes{
-    margin-right: 10px;
-    width: 24px;
-}
 
 
 .boton {
@@ -84,10 +23,7 @@ footer {
     height: 30px;
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
-    color: black;
-}
+
 
 .subtitulo{
     
@@ -99,18 +35,6 @@ a:link, a:visited, a:active {
     text-align: center;
 }
 
-#actual {
-    color: white;
-    pointer-events: none; 
-    cursor: default;
-}
-
-p{
-    text-align: justify;
-}
- .oculto {
-    display: none;
- }
 
 
 /*estilos index*/
@@ -401,34 +325,9 @@ margin-bottom: 30px;
         font-size: 30px;
     }
 
-    footer{
-        height: 160px;
-    }
 
-    .pie__caja {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 35px 35px 35px 35px;
-        gap: 5%;
-    }
-    .elemento__copyright{
-        grid-row-start: 2;
-        display: flex;
-        justify-content: center;
-    }
     
-    .elemento__links{
-        grid-row-start: 3;
-        display: flex;
-        justify-content: center;   
-    }
     
-    .elemento__iconos{
-        grid-row-start: 4;
-        grid-column-start: 1;
-        display: flex;
-        justify-content: center;
-    }
 
 
     

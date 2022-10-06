@@ -11,3 +11,15 @@ body {
     background-size: 125px 125px;
     
 }
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+p{
+    text-align: justify;
+}
+ .oculto {
+    display: none;
+ }
