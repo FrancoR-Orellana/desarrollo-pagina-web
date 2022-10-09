@@ -1,0 +1,70 @@
+@import '../base/listas';
+@import '../base/extend';
+
+main{
+    .formulario{
+        background-color: beige;
+        display: inline-block;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        border: solid 2px black;
+        .caja__no__desplegable{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 4rem;
+            background-color: #F4D19B;
+            margin-bottom: 2%;
+        }
+        #formulario {
+            margin-left: 10%;
+            .input {
+                width: 80%;
+            }
+            .input-texto {
+                width: 80%;
+                height: 70px;
+            }
+            #enviar {
+                margin-bottom: 2%;
+            }
+        }
+    }
+    .caja{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 50px;
+        column-gap: 10px;
+        .color-caja{
+            background-color: beige;
+            .caja-h2{
+                border: solid black 2px;
+                .color-boton{
+                    background-color: #F4D19B;
+                }
+            }
+        }
+        .collapse{
+            .color-desplegable{
+                background-color: beige;
+                border: solid black 1px;
+            }
+        }
+        .caja-item-1{
+            grid-column-start: 2;
+        }
+        
+        .caja-item-2{
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        .caja-item-3{
+            grid-column-start: 2;
+            grid-row-start: 3;
+        }
+    }
+}
