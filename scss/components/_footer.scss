@@ -16,9 +16,9 @@ footer {
             grid-row-start: 3;
             margin-left: 20px;
         }
-        
+        /*Se cambia posicion de los iconos por marca de agua de 000webhost*/
         .elemento__iconos{
-            grid-row-start: 3;
+            grid-row-start: 2;
             grid-column-start: 3;
             display: flex;
             justify-content: end;
