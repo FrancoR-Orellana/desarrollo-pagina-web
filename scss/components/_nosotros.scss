@@ -19,13 +19,19 @@ main{
             margin-bottom: 2%;
         }
         #formulario {
-            margin-left: 10%;
+            width: 90%;
+            margin: 0 auto;
+            label{
+                width: 100%;
+                margin-bottom: 3px;
+            }            
             .input {
-                width: 80%;
+                width: 100%;
             }
             .input-texto {
-                width: 80%;
+                width: 100%;
                 height: 70px;
+                margin-bottom: 3px;
             }
             #enviar {
                 margin-bottom: 2%;

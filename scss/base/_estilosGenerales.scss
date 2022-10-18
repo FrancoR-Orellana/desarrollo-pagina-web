@@ -41,6 +41,7 @@ h1 {
 h3 {
     font-size: large;
     margin-top: 3%;
+    margin-bottom: 10px;
     @extend %flex_ejeX;
 }
 
@@ -65,7 +66,6 @@ h3 {
     border: map-get($borde , borde-1);
     text-align: justify;
 }
-
 
 @media only screen and (min-width: 601px) and (max-width: 991px){
     h1{

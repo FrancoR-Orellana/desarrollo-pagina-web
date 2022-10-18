@@ -4,7 +4,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section .contenedor__videos, main section #links__galeria, h3, h1 {
+main section .temporal, main section .banner, main section #links__galeria, h3, h1 {
   display: flex;
   justify-content: center;
 }
@@ -44,6 +44,7 @@ h1 {
 h3 {
   font-size: large;
   margin-top: 3%;
+  margin-bottom: 10px;
 }
 
 .subtitulo {
@@ -67,6 +68,11 @@ h3 {
   background-color: beige;
   border: solid black 2px;
   text-align: justify;
+}
+
+label {
+  width: 100%;
+  margin-bottom: 3px;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 991px) {
@@ -97,7 +103,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section .contenedor__videos, main section #links__galeria, h1, h3 {
+main section .temporal, main section .banner, main section #links__galeria, h1, h3 {
   display: flex;
   justify-content: center;
 }
@@ -183,7 +189,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section .contenedor__videos, main section #links__galeria, h1, h3 {
+main section .temporal, main section .banner, main section #links__galeria, h1, h3 {
   display: flex;
   justify-content: center;
 }
@@ -226,43 +232,49 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section .contenedor__videos, main section #links__galeria, h1, h3 {
+main section .temporal, main section .banner, main section #links__galeria, h1, h3 {
   display: flex;
   justify-content: center;
 }
 
-main section div .contenedor__fotos {
-  margin: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 450px 450px 450px;
-  gap: 30px 50px;
-}
-main section div .contenedor__fotos .foto__2 {
-  grid-column: span 2;
-}
-main section div .contenedor__fotos .foto__3 {
-  grid-column: span 2;
-}
-main section div .contenedor__fotos .foto__4 {
-  grid-row: span 2;
-}
-main section div .contenedor__fotos .imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  -webkit-box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.46);
-  box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.46);
-}
-main section .contenedor__videos .video__media {
-  margin: 20px;
-}
 main section .link {
   background-color: #D7E9F7;
   opacity: 0.8;
 }
 
+@media only screen and (min-width: 992px) {
+  main section div .contenedor__fotos {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px 450px 450px;
+    gap: 30px 50px;
+  }
+  main section div .contenedor__fotos .foto__2 {
+    grid-column: span 2;
+  }
+  main section div .contenedor__fotos .foto__3 {
+    grid-column: span 2;
+  }
+  main section div .contenedor__fotos .foto__4 {
+    grid-row: span 2;
+  }
+  main section div .contenedor__fotos .imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.46);
+    box-shadow: 10px 11px 16px 4px rgba(0, 0, 0, 0.46);
+  }
+  main section .contenedor__videos {
+    display: flex;
+    justify-content: center;
+  }
+  main section .contenedor__videos .video__media {
+    margin: 20px;
+  }
+}
 /*estilos mobile*/
 @media only screen and (max-width: 991px) {
   main section div .contenedor__fotos {
@@ -298,6 +310,7 @@ main section .link {
   main section .contenedor__videos .video__media {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -315,7 +328,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, h1, h3, main section #links__galeria, main section .contenedor__videos {
+main section .temporal, main section .banner, h1, h3, main section #links__galeria {
   display: flex;
   justify-content: center;
 }
@@ -372,7 +385,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, h1, h3, main section #links__galeria, main section .contenedor__videos {
+main section .temporal, main section .banner, h1, h3, main section #links__galeria {
   display: flex;
   justify-content: center;
 }
@@ -488,7 +501,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, h1, h3, main section #links__galeria, main section .contenedor__videos, main section .banner {
+main section .temporal, h1, h3, main section #links__galeria, main section .banner {
   display: flex;
   justify-content: center;
 }
@@ -509,14 +522,20 @@ main .formulario .caja__no__desplegable {
   margin-bottom: 2%;
 }
 main .formulario #formulario {
-  margin-left: 10%;
+  width: 90%;
+  margin: 0 auto;
+}
+main .formulario #formulario label {
+  width: 100%;
+  margin-bottom: 3px;
 }
 main .formulario #formulario .input {
-  width: 80%;
+  width: 100%;
 }
 main .formulario #formulario .input-texto {
-  width: 80%;
+  width: 100%;
   height: 70px;
+  margin-bottom: 3px;
 }
 main .formulario #formulario #enviar {
   margin-bottom: 2%;
@@ -555,7 +574,7 @@ header .cabecera__contenedor, main .formulario .caja__no__desplegable {
   align-items: center;
 }
 
-main section .temporal, h1, h3, main section #links__galeria, main section .contenedor__videos, main section .banner {
+main section .temporal, h1, h3, main section #links__galeria, main section .banner {
   display: flex;
   justify-content: center;
 }
