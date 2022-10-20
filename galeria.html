@@ -16,6 +16,7 @@
         <link rel="shortcut icon" href="Imagenes/Iconos/icono-alina.ico" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,51 +51,62 @@
             <section>
                 <h1>Multimedia</h1>
                 <div id="links__galeria">
-                    <a href="#fotos" class="link">Fotos</a>
-                    <a href="#videos" class="link">Videos</a>
                 </div>    
                 <div>
-                    <h2 class="subtitulo" id="fotos">Fotos</h2>
+                    <h2 class="subtitulo" id="fotos" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200">Fotos</h2>
                     <div class="contenedor__fotos">
-                        <div class="item__fotos foto__1">
+                        <div class="item__fotos foto__1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                             <img src="Imagenes/photo_02.jpg" alt="perro salchicha con un hueso de juguete en la boca" class="imagen">
                         </div>
-                        <div class="item__fotos foto__2">
+                        <div class="item__fotos foto__2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                             <img src="Imagenes/photo_01.jpg" alt="perro salchicha justo a perro caniche" class="imagen">
                         </div>
-                        <div class="item__fotos foto__3">
+                        <div class="item__fotos foto__3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                             <img src="Imagenes/photo_03.jpg" alt="perro salchicha posando elegantemente para la foto" class="imagen">
                         </div>
-                        <div class="item__fotos foto__4">
+                        <div class="item__fotos foto__4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                             <img src="Imagenes/photo_04.jpg" alt="perro salchicha sentada en la pasto con rio de fondo" class="imagen">
                         </div>
-                        <div class="item__fotos foto__5">
+                        <div class="item__fotos foto__5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                             <img src="Imagenes/photo_05.jpg" alt="perro-salchicha sentada en un banco de cemento" class="imagen">
                         </div>
-                        <div class="item__fotos foto__6">
-                            <img src="Imagenes/photo_06.jpg" alt="perro salchicha acostada enel pasto" class="imagen">
+                        <div class="item__fotos foto__6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                            <img src="Imagenes/photo_06.jpg" alt="perro salchicha acostada en el pasto" class="imagen">
                         </div>
                     </div>
-                    
-                    <a href="temporal.html" class="link" target="_blank">Más fotos de Alina...</a>
+                    <div class="link-animado" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                        <div class="animacion">
+                            <img src="imagenes/perro-salchicha-gif.gif" alt="animacion de caricatura de perro salchicha caminando" class="animacion-perro" >
+                        </div>
+                        <div class="link" >
+                            <a href="temporal.html" target="_blank">Más fotos de Alina...</a>
+                        </div>
+                    </div>
                 </div>
                 
-                <h2 class="subtitulo" id="videos">Videos</h2>
+                <h2 class="subtitulo" id="videos" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200">Videos</h2>
                 <div class="contenedor__videos">
-                    <div class="video__media">
+                    <div class="video__media" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                         <iframe  width="320" height="515" src="https://www.youtube.com/embed/1-TExwYFQQY" title="Alina jugando tras la reja" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="video__media">
+                    <div class="video__media" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                         <iframe  width="320" height="515" src="https://www.youtube.com/embed/0PvmqQ1rYvs" title="Alina revolcandose en el pasto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="video__media">
+                    <div class="video__media" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                         <iframe  width="320" height="515" src="https://www.youtube.com/embed/M5O0qgTZgwA" title="Alina ladrando a fantasmas en la plaza" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     
                     
                     
                 </div>
-                <a href="temporal.html" class="link" target="_blank">Más videos de alina...</a>
+                <div class="link-animado" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                    <div class="animacion">
+                        <img src="imagenes/perro-salchicha-gif.gif" alt="animacion de caricatura de perro salchicha caminando" class="animacion-perro" >
+                    </div>
+                    <div class="link" >
+                        <a href="temporal.html" target="_blank">Más videos de Alina...</a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -127,7 +139,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
     
 </html>
