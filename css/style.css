@@ -4,7 +4,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section #links__galeria, h3, h1 {
+main section .temporal, main section .banner, h3, h1 {
   display: flex;
   justify-content: center;
 }
@@ -70,11 +70,6 @@ h3 {
   text-align: justify;
 }
 
-label {
-  width: 100%;
-  margin-bottom: 3px;
-}
-
 @media only screen and (min-width: 601px) and (max-width: 991px) {
   h1 {
     font-size: 30px;
@@ -103,7 +98,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section #links__galeria, h1, h3 {
+main section .temporal, main section .banner, h1, h3 {
   display: flex;
   justify-content: center;
 }
@@ -189,7 +184,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section #links__galeria, h1, h3 {
+main section .temporal, main section .banner, h1, h3 {
   display: flex;
   justify-content: center;
 }
@@ -232,14 +227,31 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, main section #links__galeria, h1, h3 {
+main section .temporal, main section .banner, h1, h3 {
   display: flex;
   justify-content: center;
 }
 
-main section .link {
-  background-color: #D7E9F7;
-  opacity: 0.8;
+main section .link-animado {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 200px;
+  margin-bottom: 30px;
+}
+main section .link-animado .link {
+  grid-column-start: 2;
+  margin: 0 auto;
+}
+main section .link-animado .link a {
+  color: white;
+  font-size: 20px;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+main section .link-animado .animacion {
+  grid-column-start: 2;
+}
+main section .link-animado .animacion .animacion-perro {
+  height: 200px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -321,6 +333,17 @@ main section .link {
     grid-template-rows: auto;
     gap: 30px 50px;
   }
+  main section .link-animado {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows: 100px;
+  }
+  main section .link-animado .animacion {
+    grid-column-start: 2;
+  }
+  main section .link-animado .animacion .animacion-perro {
+    height: 100px;
+  }
 }
 main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   display: flex;
@@ -328,7 +351,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, h1, h3, main section #links__galeria {
+main section .temporal, main section .banner, h1, h3 {
   display: flex;
   justify-content: center;
 }
@@ -385,7 +408,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, main section .banner, h1, h3, main section #links__galeria {
+main section .temporal, main section .banner, h1, h3 {
   display: flex;
   justify-content: center;
 }
@@ -501,7 +524,7 @@ main .formulario .caja__no__desplegable, header .cabecera__contenedor {
   align-items: center;
 }
 
-main section .temporal, h1, h3, main section #links__galeria, main section .banner {
+main section .temporal, h1, h3, main section .banner {
   display: flex;
   justify-content: center;
 }
@@ -574,7 +597,7 @@ header .cabecera__contenedor, main .formulario .caja__no__desplegable {
   align-items: center;
 }
 
-main section .temporal, h1, h3, main section #links__galeria, main section .banner {
+main section .temporal, h1, h3, main section .banner {
   display: flex;
   justify-content: center;
 }
