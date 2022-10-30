@@ -214,7 +214,7 @@ main section .temporal, main section .banner, h1, h3 {
 }
 .index .noticia .noticia__articulo {
   width: 90%;
-  margin-top: 20px;
+  margin: auto;
   grid-column-start: 3;
 }
 .index .noticia .imagen-noticia-2 {
@@ -223,7 +223,6 @@ main section .temporal, main section .banner, h1, h3 {
 .index .noticia .noticia-2 {
   grid-column-start: 1;
   grid-row-start: 1;
-  margin: 20px auto;
 }
 
 /*estilos mobile*/
