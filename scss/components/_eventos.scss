@@ -62,6 +62,12 @@ main{
                 }
                 .mapa{
                     grid-column: span 3;
+                    .collapse{
+                        .card{
+                            margin-bottom: 10px;
+                        }
+                    }
+                    
                 }
                 .oculto{
                     display: none;

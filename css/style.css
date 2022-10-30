@@ -489,6 +489,9 @@ main section .banner .banner__evento .banner__evento__informacion .compra:active
 main section .banner .banner__evento .mapa {
   grid-column: span 3;
 }
+main section .banner .banner__evento .mapa .collapse .card {
+  margin-bottom: 10px;
+}
 main section .banner .banner__evento .oculto {
   display: none;
 }
